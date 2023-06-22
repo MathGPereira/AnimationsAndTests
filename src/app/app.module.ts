@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HandmadeCarouselComponent } from './core/components/carroussels/handmade-carousel/handmade-carousel.component';
+import { HandmadeCarouselModule } from './core/components/carroussels/handmade-carousel/handmade-carousel.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HandmadeCarouselComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HandmadeCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
