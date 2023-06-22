@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HandmadeCarouselModule } from './core/components/carroussels/handmade-carousel/handmade-carousel.module';
 import { ControlModule } from './shared/components/controls/handmade-carousel/control/control.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { ControlModule } from './shared/components/controls/handmade-carousel/co
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FontAwesomeModule,
     HandmadeCarouselModule,
     ControlModule
   ],
