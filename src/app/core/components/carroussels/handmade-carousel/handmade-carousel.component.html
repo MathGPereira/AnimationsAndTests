@@ -10,14 +10,18 @@
         class="button handmade-carousel__left-button"
         role="button"
         aria-label="Left button"
-        tabindex="1">
+        tabindex="1"
+        (click)="changeImage(-1)"
+        >
         <app-control [icon]="typesIcons.left"></app-control>
     </div>
     <div
         class="button handmade-carousel__right-button"
         role="button"
         aria-label="Right button"
-        tabindex="2">
+        tabindex="2"
+        (click)="changeImage(1)"
+        >
         <app-control [icon]="typesIcons.right"></app-control>
     </div>
 </section>
