@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-handmade-carousel',
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
 export class HandmadeCarouselComponent {
 
     private _activeImageIndex = 1;
+    public typesIcons = {
+        'left': faArrowLeft,
+        'right': faArrowRight
+    };
     public indexes = [1, 2, 3, 4];
 
     get activeImageIndex(): number {

@@ -1,0 +1,7 @@
+@mixin imageCarousel() {
+    @for $imageIndex from 2 through 4 {
+        .handmade-carousel__image-#{$imageIndex} {
+            background: url('../../../../assets/images/handmade-carousel/image-#{$imageIndex}.avif') no-repeat center center / cover;
+        }
+    }
+}

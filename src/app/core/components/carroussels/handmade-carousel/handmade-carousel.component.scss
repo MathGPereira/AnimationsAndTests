@@ -1,25 +1,43 @@
+@import '../../../sass/abstract/mixins';
+
+@include imageCarousel();
+
 .handmade-carousel {
     height: 100%;
+    position: relative;
     width: 100%;
-    div {
+    .image {
         height: 100%;
         transition: all .5s linear;
         width: 100%;
     }
     .handmade-carousel__image-1 {
         background: url('../../../../../assets/images/handmade-carousel/image-1.jpg') no-repeat center center / cover;
-
     }
-    .handmade-carousel__image-2 {
-        background: url('../../../../../assets/images/handmade-carousel/image-2.avif') no-repeat center center / cover;
-
+    .button {
+        background-color: #5353537a;
+        border-radius: 50%;
+        box-sizing: border-box;
+        color: #adadad;
+        cursor: pointer;
+        font-size: 30px;
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all .4s linear;
+        z-index: 9;
+        &:hover {
+            background-color: #53535342;
+            color: #adadad7e;
+        }
     }
-    .handmade-carousel__image-3 {
-        background: url('../../../../../assets/images/handmade-carousel/image-3.avif') no-repeat center center / cover;
-
+    .handmade-carousel__left-button {
+        left: 0;
+        margin-left: 1rem;
     }
-    .handmade-carousel__image-4 {
-        background: url('../../../../../assets/images/handmade-carousel/image-4.avif') no-repeat center center / cover;
-
+    .handmade-carousel__right-button {
+        right: 0;
+        margin-right: 1rem;
     }
 }
