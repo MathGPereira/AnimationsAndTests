@@ -1,4 +1,14 @@
 main {
+    align-items: center;
+    box-sizing: border-box;
+    display: grid;
+    gap: 5px;
+    grid-template: repeat(2, 50%) / repeat(2, 50%);
     height: 100vh;
+    padding: 5px;
     width: 100vw;
+    app-handmade-carousel {
+        height: 100%;
+        width: 100%;
+    }
 }
