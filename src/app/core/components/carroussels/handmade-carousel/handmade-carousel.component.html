@@ -1,14 +1,11 @@
 <section class="handmade-carousel">
-    <ng-container *ngFor="let image of images">
-        <div
-            class="handmade-carousel__image-{{ image.index }} image"
-            role="image"
-            title="{{ image.alt }}"
-            tabindex="1"
-            *ngIf="image.index === activeImageIndex"
-            >
-        </div>
-    </ng-container>
+    <div
+        class="handmade-carousel__image-{{ images[activeImageIndex].index }} image"
+        role="image"
+        title="{{ images[activeImageIndex].alt }}"
+        tabindex="1"
+        >
+    </div>
     <div
         class="button handmade-carousel__left-button"
         role="button"

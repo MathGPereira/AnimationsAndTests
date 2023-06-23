@@ -8,7 +8,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 })
 export class HandmadeCarouselComponent {
 
-    private _activeImageIndex = 1;
+    private _activeImageIndex = 0;
     public typesIcons = {
         'left': faArrowLeft,
         'right': faArrowRight
@@ -34,10 +34,10 @@ export class HandmadeCarouselComponent {
 
     public changeImage(info: number): void {
         if(info === 1) {
-            this.activeImageIndex < 4 ? this.activeImageIndex += 1 : this.activeImageIndex = 1;
+            this.activeImageIndex < 4 ? this.activeImageIndex += 1 : this.activeImageIndex = 0;
             console.log(this.activeImageIndex)
         }else {
-            this.activeImageIndex > 1 ? this.activeImageIndex -= 1 : this.activeImageIndex = 4;
+            this.activeImageIndex > 0 ? this.activeImageIndex -= 1 : this.activeImageIndex = 4;
             console.log(this.activeImageIndex)
         }
     }
