@@ -13,7 +13,24 @@ export class HandmadeCarouselComponent {
         'left': faArrowLeft,
         'right': faArrowRight
     };
-    public indexes = [1, 2, 3, 4];
+    public images = [
+        {
+            index: 1,
+            alt: 'Campo verde com muitas árvores ao redor e um céu azul com algumas núvens'
+        },
+        {
+            index: 2,
+            alt: 'Canoa parada em uma pequena margem de lago ao por do sol com algumas montanhas ao fundo'
+        },
+        {
+            index: 3,
+            alt: 'Cachoeiras com águas cristalinas em um dia ensolarado, com poucas núvens e um belo lago e muitas árvores verdes ao redor'
+        },
+        {
+            index: 4,
+            alt: 'Uma pequena lagoa em uma floresta com raios de luz batendo na água, rochas com musgo e algumas plantas no chão'
+        },
+    ];
 
     public changeImage(info: number): void {
         if(info === 1) {

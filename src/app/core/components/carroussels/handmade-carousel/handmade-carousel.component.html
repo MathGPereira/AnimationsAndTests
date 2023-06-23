@@ -1,8 +1,11 @@
 <section class="handmade-carousel">
-    <ng-container *ngFor="let index of indexes">
+    <ng-container *ngFor="let image of images">
         <div
-            class="handmade-carousel__image-{{ index }} image"
-            *ngIf="index === activeImageIndex"
+            class="handmade-carousel__image-{{ image.index }} image"
+            role="image"
+            title="{{ image.alt }}"
+            tabindex="1"
+            *ngIf="image.index === activeImageIndex"
             >
         </div>
     </ng-container>
@@ -10,8 +13,9 @@
         class="button handmade-carousel__left-button"
         role="button"
         aria-label="Left button"
-        tabindex="1"
+        tabindex="2"
         (click)="changeImage(-1)"
+        (keyup)="$event.key === 'Enter' ? changeImage(-1) : null"
         >
         <app-control [icon]="typesIcons.left"></app-control>
     </div>
@@ -19,8 +23,9 @@
         class="button handmade-carousel__right-button"
         role="button"
         aria-label="Right button"
-        tabindex="2"
+        tabindex="3"
         (click)="changeImage(1)"
+        (keyup)="$event.key === 'Enter' ? changeImage(1) : null"
         >
         <app-control [icon]="typesIcons.right"></app-control>
     </div>
