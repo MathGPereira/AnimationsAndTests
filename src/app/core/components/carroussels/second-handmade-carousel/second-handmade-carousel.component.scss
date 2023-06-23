@@ -1,0 +1,21 @@
+@import '../../../sass/abstract/mixins';
+
+@include imageSecondCarousel();
+
+div {
+    height: 100%;
+    width: 100%;
+}
+
+.second-handmade-carousel {
+    height: 100%;
+    width: 100%;
+    .carousel__container {
+        overflow-x: scroll;
+        .container__images {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 1rem;
+        }
+    }
+}

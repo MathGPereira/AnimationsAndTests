@@ -1,6 +1,6 @@
 @import '../../../sass/abstract/mixins';
 
-@include imageCarousel();
+@include imageFirstCarousel();
 
 .handmade-carousel {
     height: 100%;
@@ -12,7 +12,7 @@
         width: 100%;
     }
     .handmade-carousel__image-1 {
-        background: url('../../../../../assets/images/handmade-carousel/image-1.jpg') no-repeat center center / cover;
+        background: url('../../../../../assets/images/first-handmade-carousel/image-1.jpg') no-repeat center center / cover;
     }
     .button {
         background-color: #5353537a;

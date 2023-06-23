@@ -1,7 +1,15 @@
-@mixin imageCarousel() {
+@mixin imageFirstCarousel() {
     @for $imageIndex from 2 through 4 {
         .handmade-carousel__image-#{$imageIndex} {
-            background: url('../../../../assets/images/handmade-carousel/image-#{$imageIndex}.avif') no-repeat center center / cover;
+            background: url('../../../../assets/images/first-handmade-carousel/image-#{$imageIndex}.avif') no-repeat center center / cover;
+        }
+    }
+}
+
+@mixin imageSecondCarousel() {
+    @for $imageIndex from 1 through 8 {
+        .images-#{$imageIndex} {
+            background: url('../../../../assets/images/second-handmade-carousel/image-#{$imageIndex}.jpg') no-repeat center center / cover;
         }
     }
 }

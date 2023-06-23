@@ -1,1 +1,11 @@
-<p>second-handmade-carousel works!</p>
+<section class="second-handmade-carousel">
+    <div class="carousel__container">
+        <div class="container__images">
+            <img
+                *ngFor="let index of indexes"
+                class="image"
+                src="../../../../../assets/images/second-handmade-carousel/image-{{ index }}.jpg"
+            >
+        </div>
+    </div>
+</section>
