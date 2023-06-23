@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HandmadeCarouselModule } from './core/components/carroussels/first-handmade-carousel/handmade-carousel.module';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FirstHandmadeCarouselModule } from './core/components/carroussels/first-handmade-carousel/handmade-carousel.module';
+import { SecondHandmadeCarouselModule } from './core/components/carroussels/second-handmade-carousel/second-handmade-carousel.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HandmadeCarouselModule
+    FirstHandmadeCarouselModule,
+    SecondHandmadeCarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

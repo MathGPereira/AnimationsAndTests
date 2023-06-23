@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-handmade-carousel',
-  templateUrl: './handmade-carousel.component.html',
-  styleUrls: ['./handmade-carousel.component.scss']
+  selector: 'app-first-handmade-carousel',
+  templateUrl: './first-handmade-carousel.component.html',
+  styleUrls: ['./first-handmade-carousel.component.scss']
 })
-export class HandmadeCarouselComponent {
+export class FirstHandmadeCarouselComponent {
 
     private _activeImageIndex = 0;
     public typesIcons = {
